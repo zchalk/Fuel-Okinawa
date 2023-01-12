@@ -34,6 +34,18 @@ html, body {
   color: #0d3932;
   opacity: 0.9;
 }
+.heading-about {
+  width: 20vw;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 100;
+  color: #0d3932;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
 .nav-1 {
   position: absolute;
   left: 50%;
@@ -70,6 +82,7 @@ nav > a:hover {
   font-variation-settings: "wght" 800; 
   letter-spacing: 1px;
 }
+
 .img-cont {
   height: 80vh;
   width: 35vw;
@@ -92,3 +105,67 @@ nav > a:hover {
   background: url("../images/Fuel-4.jpg") 50% 50% no-repeat fixed;
 }
 
+.about-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  height: 30vh;
+  width: 80vw;
+  top: 10%;
+  left: 10%;
+  margin-right: 15%;
+}
+.about-1 > p {
+  font-family: 'Raleway', sans-serif;
+  font-variation-settings: "wght" 500;
+  width: 40vw;
+}
+.about-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  height: 30vh;
+  width: 80vw;
+  top: 55%;
+  left: 10%;
+  margin-right: 15%;
+}
+.about-2 > p {
+  font-family: 'Raleway', sans-serif;
+  font-variation-settings: "wght" 500;
+  width: 40vw;
+}
+.portrait{
+  height: max-content;
+  border-radius: 50%;
+  /* margin: 5vh; */
+}
+
+.menu-1 {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  height: 80vh;
+  border: .5vw solid rgba(13, 57, 50, 0.9);
+}
+.menu-2 {
+  position: absolute;
+  top: 10%;
+  left: 55%;
+  height: 80vh;
+  border: .5vw solid rgba(13, 57, 50, 0.9);
+}
+iframe {
+  position: absolute;
+  top: 18%;
+  left: 65%;
+}
+.instagram-widget {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
