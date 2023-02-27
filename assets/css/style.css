@@ -1,7 +1,4 @@
-@font-face {
-  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/PT_Sans-Web-Bold.ttf);
-  font-family: ptsans-bold;
-}
+/* basic all */
 @font-face {
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/PFSquareSansPro-Regular.otf);
   font-family: pfs-regular;
@@ -21,54 +18,36 @@ html, body {
   overflow: hidden;
 }
 
+/* shared assets */
 .scene {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.heading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+.heading-alt {
   z-index: 100;
-  color: #0d3932;
-  opacity: 0.9;
-}
-.heading-about {
-  width: 20vw;
-  position: absolute;
-  top: 47%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: 100;
-  color: #0d3932;
   opacity: 0.9;
   cursor: pointer;
+  width: 20vw;
+}
+.heading-a {
+  align-self: center;
 }
 
-.nav-1 {
-  position: absolute;
-  left: 50%;
-  top: 5%;
-  transform: translateX(-50%) translateY(-50%);
+.nav {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   z-index: 100;
   display: flex;
   flex-direction: row;
-  justify-content:space-between
-}
-.nav-2 {
-  position: absolute;
-  left: 50%;
-  top: 95%;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: 100;
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
+  justify-content:space-evenly;
 }
 
 nav > a {
   width: 20vw;
+  font-size: 0.7vw;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   color: #0d3932;
@@ -80,92 +59,232 @@ nav > a {
 }
 nav > a:hover {
   font-variation-settings: "wght" 800; 
-  letter-spacing: 1px;
+  letter-spacing: 0.8vw;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
+/* mainpage */
+.heading {
+  width:30vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 100;
+  opacity: 0.9;
+}
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.carosel-container {
+  display: flex;
+}
 .img-cont {
   height: 80vh;
   width: 35vw;
-  position: absolute;
-  top: 10vh;
-  left: 50%;
   background-size: cover;
   transition: margin 1s cubic-bezier(0.99, 0.1, 0.35, 1.2);
   will-change: margin;
   z-index: 10;
 }
 
-.img-cont.left {
-  margin-left: calc(-35vw - 50px);
-}
 .img-cont.right {
-  margin-left: 50px;
+  margin-left: 6vw;
 }
 .img-cont.cont-1 {
   background: url("../images/Fuel-4.jpg") 50% 50% no-repeat fixed;
 }
 
-.about-1 {
+/* about */
+.about {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  position: absolute;
-  height: 30vh;
-  width: 80vw;
-  top: 10%;
-  left: 10%;
-  margin-right: 15%;
+
 }
-.about-1 > p {
-  font-family: 'Raleway', sans-serif;
-  font-variation-settings: "wght" 500;
-  width: 40vw;
-}
-.about-2 {
+.about2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  position: absolute;
-  height: 30vh;
-  width: 80vw;
-  top: 55%;
-  left: 10%;
-  margin-right: 15%;
+
 }
-.about-2 > p {
+.about2 > p {
   font-family: 'Raleway', sans-serif;
   font-variation-settings: "wght" 500;
+  color: #0d3932;
   width: 40vw;
+  font-size: 1vw;
+  text-align: center;
 }
 .portrait{
-  height: max-content;
-  border-radius: 50%;
-  /* margin: 5vh; */
+  height: 80vh;
 }
 
-.menu-1 {
-  position: absolute;
-  top: 10%;
-  left: 15%;
+/* menu */
+#menuImg, #drinksImg {
   height: 80vh;
+  margin-top: 10vh;
   border: .5vw solid rgba(13, 57, 50, 0.9);
 }
-.menu-2 {
-  position: absolute;
-  top: 10%;
-  left: 55%;
-  height: 80vh;
-  border: .5vw solid rgba(13, 57, 50, 0.9);
+
+#toggle{
+  background-color: #0d3932;
+  color:white;
+  border-radius:1vw;
+  z-index: 200;
+  width: 5vw;
+  height: 2.5vh;
+  font-size: 0.7vw;
 }
-iframe {
-  position: absolute;
-  top: 18%;
-  left: 65%;
+
+/* shared assets media queries */
+@media screen and (max-width: 2000px) {
+  .heading-alt {
+    width:15vw;
+  }
+  nav > a {
+    font-size: 1vw;
+  }
+  nav > a:hover {
+    letter-spacing: 0.5vw;
+  }
 }
-.instagram-widget {
-  position: absolute;
-  top: 10%;
-  left: 15%;
+@media screen and (max-width: 1200px) {
+  .heading-alt {
+    width:15vw;
+  }
+  nav > a {
+    font-size: 1.5vw;
+  }
+  nav > a:hover {
+    letter-spacing: 0.25vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .heading-alt {
+    width:15vw;
+  }
+  nav > a {
+    font-size: 1.75vw;
+  }
+  nav > a:hover {
+    letter-spacing: 0.15vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .heading-alt {
+    width:15vw;
+  }
+  nav > a {
+    font-size: 2vw;
+  }
+  nav > a:hover {
+    letter-spacing: 0.07vw;
+  }
+}
+/* homepage media queries */
+@media screen and (max-width: 900px) {
+  .heading {
+    width: 50vw;
+  }
+  
+}
+/* menu media queries */
+@media screen and (max-width: 2200px){
+  #menuImg, #drinksImg {
+    height: 70vh;
+  }
+  #toggle{
+    width: 5vw;
+    height: 2vh;
+    margin-bottom: 0.5vh;
+  }
+}
+@media screen and (max-width: 1750px){
+  #menuImg, #drinksImg {
+    height: 60vh;
+  }
+  #toggle{
+    width: 5.5vw;
+    height: 2.5vh;
+    font-size: 1vw;
+  }
+}
+@media screen and (max-width: 1500px){
+  #menuImg, #drinksImg {
+    height: 50vh;
+  }
+  #toggle{
+    width: 6vw;
+    height: 3vh;
+    font-size: 1.25vw;
+  }
+}
+@media screen and (max-width: 1250px){
+  #menuImg, #drinksImg {
+    height: 40vh;
+    margin:0;
+  }
+  #toggle{
+    width: 12vw;
+    height: 3vh;
+    font-size: 1.5vw;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .heading-alt.menu {
+    width:10vw;
+  }
+}
+@media screen and (max-width: 800px){
+  #toggle{
+    width: 15vw;
+    height: 2vh;
+    font-size: 1.5vw;
+  }
+}
+/* aboutpage media queries */
+@media  screen and (max-width:2500px){
+  .portrait{
+    height: 70vh;
+  }
+}
+@media  screen and (max-width:2200px){
+  .portrait{
+    height: 60vh;
+  }
+}
+@media  screen and (max-width:1750px){
+  .portrait{
+    height: 50vh;
+  }
+}
+@media  screen and (max-width:1450px){
+  .portrait{
+    height: 40vh;
+  }
+  .about {
+    flex-direction: column;
+  }
+  
+}
+@media  screen and (max-width:1250px){
+  .about2 > p{
+    font-size: 1.5vw;
+  }
+}
+@media  screen and (max-width:850px){
+  .about2 > p{
+    font-size: 2vw;
+  }
 }
