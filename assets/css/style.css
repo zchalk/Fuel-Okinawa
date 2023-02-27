@@ -123,6 +123,7 @@ nav > a:hover {
   width: 40vw;
   font-size: 1vw;
   text-align: center;
+  margin-top: 1vh;
 }
 .portrait{
   height: 80vh;
