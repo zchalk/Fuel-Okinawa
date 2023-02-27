@@ -18,7 +18,7 @@ html, body {
   /* overflow: hidden; */
   overflow: scroll;
  -webkit-overflow-scrolling: touch;
- background-color: #bdb3a6;
+ background-color: #faebd7;
 }
 .eapps-link {
   display: none;
@@ -146,7 +146,7 @@ nav > a:hover {
   color:antiquewhite;
   border-radius:1vw;
   z-index: 200;
-  width: 5vw;
+  width: 6vw;
   height: 2.5vh;
   font-size: 0.7vw;
   cursor: pointer;
