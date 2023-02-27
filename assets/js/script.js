@@ -9,7 +9,7 @@ function japaneseToggle() {
         if (button.innerText == "日本語メニュー") {
             menu.src = "assets/images/Menu-JAP.jpeg";
             drinks.src = "assets/images/Drinks-JAP.jpeg";
-            button.innerText = "English Menu?";
+            button.innerText = "English Menu";
         }else if (button.innerText = "English Menu") {
             menu.src = "assets/images/Menu-ENG.jpeg";
             drinks.src = "assets/images/Drinks-ENG.jpeg";
