@@ -143,6 +143,7 @@ nav > a:hover {
   width: 5vw;
   height: 2.5vh;
   font-size: 0.7vw;
+  cursor: pointer;
 }
 /* connect */
 .map {
