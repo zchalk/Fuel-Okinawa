@@ -17,4 +17,5 @@ function japaneseToggle() {
         }
 }
 
+
 // button.addEventListener("click", japaneseToggle);

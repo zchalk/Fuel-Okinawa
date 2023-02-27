@@ -18,6 +18,10 @@ html, body {
   /* overflow: hidden; */
   overflow: scroll;
  -webkit-overflow-scrolling: touch;
+ background-color: #faebd7;
+}
+.eapps-link {
+  display: none;
 }
 
 /* shared assets */
@@ -150,6 +154,7 @@ nav > a:hover {
 /* connect */
 .map {
   height:50vh;
+  margin-bottom: 5vh;
 }
 
 /* shared assets media queries */
