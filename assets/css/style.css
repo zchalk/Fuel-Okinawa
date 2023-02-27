@@ -122,9 +122,10 @@ nav > a:hover {
   color: #0d3932;
   width: 40vw;
   font-size: 1vw;
-  text-align: center;
   margin-top: 1vh;
+  margin-left: 1vw;
 }
+
 .portrait{
   height: 80vh;
 }
@@ -281,7 +282,10 @@ nav > a:hover {
   .about {
     flex-direction: column;
   }
-  
+  .about2 > p {
+    margin: 0;
+    text-align: center;
+  }
 }
 @media  screen and (max-width:1250px){
   .about2 > p{
