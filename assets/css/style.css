@@ -15,7 +15,9 @@
 
 html, body {
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow: scroll;
+ -webkit-overflow-scrolling: touch;
 }
 
 /* shared assets */
@@ -131,7 +133,7 @@ nav > a:hover {
 
 /* menu */
 #menuImg, #drinksImg {
-  height: 80vh;
+  height: 75vh;
   margin-top: 10vh;
   border: .5vw solid rgba(13, 57, 50, 0.9);
 }
