@@ -18,7 +18,7 @@ html, body {
   /* overflow: hidden; */
   overflow: scroll;
  -webkit-overflow-scrolling: touch;
- background-color: #faebd7;
+ background-color: #bdb3a6;
 }
 .eapps-link {
   display: none;
@@ -143,7 +143,7 @@ nav > a:hover {
 
 #toggle{
   background-color: #0d3932;
-  color:white;
+  color:antiquewhite;
   border-radius:1vw;
   z-index: 200;
   width: 5vw;
